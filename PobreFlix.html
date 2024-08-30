@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PobreFlix</title>
+    <style>
+        /* Fonte semelhante à usada pela Netflix */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #000000;
+            color: white;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #f31823;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        /* Estilo do menu de navegação */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo do banner */
+        .banner {
+            background-image: url('https://facts.net/wp-content/uploads/2023/06/50-facts-about-the-movie-the-pianist-1687601099.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .banner h2 {
+            margin: 20px;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Estilo da seção de filmes */
+        .movie-section {
+            padding: 20px;
+        }
+
+        .movie-section h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .movie {
+            text-align: center;
+        }
+
+        .movie img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .movie-title {
+            margin-top: 10px;
+            font-size: 18px;
+            color: white;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #888;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pobreflix</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Mais Recentes</a></li>
+                <li><a href="#">Minha Lista</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <div class="banner">
+        <h2>Filme em Destaque</h2>
+    </div>
+
+    <!-- Seção de filmes -->
+    <div class="movie-section">
+        <h3>Filmes Populares</h3>
+        <div class="movie-grid">
+            <div class="movie">
+                <a href="https://drive.google.com/file/d/1BqtSZSaT3GONmtcHngp11hWNve5EybzM/view?usp=drive_link">
+                    <img src="https://static.wikia.nocookie.net/dublagem/images/e/e4/Avidaebela.jpg/revision/latest?cb=20240202232904&path-prefix=pt-br" alt="Filme 1">
+                    <div class="movie-title">A Vida é Bela</div>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="https://drive.google.com/file/d/14aNokzsKDsuJWaWUlVxeWlTAHni01wQ5/view?usp=sharing">
+                    <img src="https://media.themoviedb.org/t/p/w500/765XUik0cbyWHITgE22FhpA8elG.jpg" alt="Filme 2">
+                    <div class="movie-title">O Menino, a Toupeira, a Raposa e o Cavalo</div>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="https://drive.google.com/file/d/14G7_yjaJwnB8KBEiJBgSLn9Us84yaNF6/view?usp=sharing">
+                    <img src="https://pbs.twimg.com/media/F06GgPLXoAA6ZVH.jpg" alt="Filme 3">
+                    <div class="movie-title">Mary e Max - Uma Amizade Diferente
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de séries -->
+    <div class="movie-section">
+        <h3>Séries Populares</h3>
+        <div class="movie-grid">
+            <div class="movie">
+                <a href="https://t.me/+p-MAfdBOMT44NzZi">
+                    <img src="https://images.justwatch.com/poster/319251238/s718/temporada-1.jpg" alt="Série 1">
+                    <div class="movie-title">A Mulher no Lago Temp. 1</div>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="https://t.me/+_gm7pBVlMMVhZjM6">
+                    <img src="https://static.wikia.nocookie.net/leagueoflegends/images/7/7d/Arcane_2021_Logo.jpg/revision/latest?cb=20211024000745" alt="Série 2">
+                    <div class="movie-title">Arcane</div>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="https://t.me/+rAHS4jX6v0FiMTky">
+                    <img src="https://br.web.img3.acsta.net/pictures/22/11/30/19/53/5856320.jpg" alt="Série 3">
+                    <div class="movie-title">The Last of Us</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pobreflix - Todos os direitos reservados para fins educativos por @miguelg0me2</p>
+    </footer>
+</body>
+</html>
